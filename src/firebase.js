@@ -3,9 +3,11 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
+const key = import.meta.env.VITE_API_KEY;
+
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAZ10ZUwul4CnIxLTkg7vKmyC-sodiUVrs",
+  apiKey: key,
   authDomain: "disney-clone-103b6.firebaseapp.com",
   projectId: "disney-clone-103b6",
   storageBucket: "disney-clone-103b6.appspot.com",
